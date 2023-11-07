@@ -1,0 +1,19 @@
+body {
+    font-family: 'Pirata One', cursive;
+    font-size: 22px;
+}
+
+.spacer {
+    padding-top: 50px;
+}
+
+.emphasis {
+    font-family: 'Vollkorn';
+    font-size: 22px;
+}
+
+.handwritten {
+    font-family: 'Herr Von Muellerhoff';
+    font-size: 46px;
+    padding: 5px;
+}
