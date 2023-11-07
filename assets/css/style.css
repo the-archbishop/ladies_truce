@@ -1,4 +1,9 @@
 body {
+    background-image: url('../images/kiwihug-y_2GC4EhOP4-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Pirata One', cursive;
     font-size: 22px;
 }
@@ -34,4 +39,19 @@ body {
     font-family: 'Herr Von Muellerhoff';
     font-size: 46px;
     padding: 5px;
+    font-weight: bold;
+}
+
+.handwritten-2 {
+    font-family: 'Mrs Saint Delafield';
+    font-size: 46px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.handwritten-3 {
+    font-family: 'Meddon';
+    font-size: 26px;
+    padding: 5px;
+    font-weight: bold;
 }
