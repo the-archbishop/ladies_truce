@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Pirata One', cursive;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .bullet-h { 
@@ -19,6 +19,7 @@ body {
 
 .bullet li {
     list-style-type: none;
+    padding-bottom: 10px;
 }
 
 .bullet li:before {
@@ -38,20 +39,47 @@ body {
 .handwritten {
     font-family: 'Herr Von Muellerhoff';
     font-size: 46px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     font-weight: bold;
 }
 
 .handwritten-2 {
     font-family: 'Mrs Saint Delafield';
     font-size: 46px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.handwritten-2-sm {
+    font-family: 'Mrs Saint Delafield';
+    font-size: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.handwritten-2-md {
+    font-family: 'Mrs Saint Delafield';
+    font-size: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
     font-weight: bold;
 }
 
 .handwritten-3 {
     font-family: 'Meddon';
     font-size: 26px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.handwritten-3-md {
+    font-family: 'Meddon';
+    font-size: 22px;
+    padding-right: 5px;
+    padding-left: 5px;
     font-weight: bold;
 }
