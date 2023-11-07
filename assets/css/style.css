@@ -3,6 +3,24 @@ body {
     font-size: 22px;
 }
 
+.bullet-h { 
+    counter-increment: ordem;
+}
+
+.bullet {
+    counter-reset: bullet;
+    padding-left: 12px;
+}
+
+.bullet li {
+    list-style-type: none;
+}
+
+.bullet li:before {
+    counter-increment: bullet;
+    content: counter(ordem)"." counter(bullet)" ";
+}
+
 .spacer {
     padding-top: 50px;
 }
