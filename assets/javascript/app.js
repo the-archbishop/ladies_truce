@@ -27,9 +27,8 @@ function getOrdinal(day) {
 const formattedDate = `${month} ${getOrdinal(day)} of the year ${year}`;
 $('#cal-dt').text(formattedDate);
 
-// Signature Pad
+// Signature Pads
 function resizeCanvas(canvas) {
-  console.log(canvas)
   let ratio = Math.max(window.devicePixelRatio || 1, 1);
   canvas.width = canvas.offsetWidth * ratio;
   canvas.height = canvas.offsetHeight * ratio;
@@ -40,7 +39,8 @@ function resizeCanvas(canvas) {
 const laeCanvas = document.getElementById('lae-signature-pad');
 const laeSignaturePad = new SignaturePad(laeCanvas, {
   backgroundColor: 'rgba(255, 255, 255, 0)',
-  penColor: 'rgb(0, 0, 0)'
+  penColor: 'rgb(38, 35, 31)',
+  throttle: 0
 });
 const laeClearButton = document.getElementById('lae-signature-clear');
 laeClearButton.addEventListener('click', function (event) {
@@ -52,7 +52,8 @@ resizeCanvas(laeCanvas);
 const shartCanvas = document.getElementById('shart-signature-pad');
 const shartSignaturePad = new SignaturePad(shartCanvas, {
   backgroundColor: 'rgba(255, 255, 255, 0)',
-  penColor: 'rgb(0, 0, 0)'
+  penColor: 'rgb(38, 35, 31)',
+  throttle: 0
 });
 const shartClearButton = document.getElementById('shart-signature-clear');
 shartClearButton.addEventListener('click', function (event) {
@@ -64,10 +65,17 @@ resizeCanvas(shartCanvas);
 const corrinaCanvas = document.getElementById('corinna-signature-pad');
 const corinnaSignaturePad = new SignaturePad(corrinaCanvas, {
   backgroundColor: 'rgba(255, 255, 255, 0)',
-  penColor: 'rgb(0, 0, 0)'
+  penColor: 'rgb(38, 35, 31)',
+  throttle: 0
 });
 const corinnaClearButton = document.getElementById('corinna-signature-clear');
 corinnaClearButton.addEventListener('click', function (event) {
   corinnaSignaturePad.clear();
 });
 resizeCanvas(corrinaCanvas);
+
+// Resize listeners
+const canvases = [laeCanvas, shartCanvas, corrinaCanvas]
+canvases.forEach((canvas, index) => {
+  window.addEventListener("resize", resizeCanvas(canvas));
+});

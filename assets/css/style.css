@@ -7,6 +7,7 @@ body {
     font-family: 'Pirata One', cursive;
     font-size: 24px;
     color: #26231f;
+    cursor: url('../images/quill_cursor.png'), pointer;
 }
 
 .bullet-h { 
@@ -86,7 +87,7 @@ body {
 }
 
 .seals {
-    width: 100px;
+    width: 125px;
     padding: 10px;
 }
 
@@ -95,7 +96,6 @@ body {
     padding: 10px;
 }
 canvas.signature-pad {
-    cursor: crosshair;
     width: 600px;
     height: 100px;
 }
