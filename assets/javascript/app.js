@@ -79,3 +79,16 @@ const canvases = [laeCanvas, shartCanvas, corrinaCanvas]
 canvases.forEach((canvas, index) => {
   window.addEventListener("resize", resizeCanvas(canvas));
 });
+
+// HTML2canvas
+$("#certification").on( "click", function() {
+   // Toggle the "clicked" class to change opacity
+   $("#certification").toggleClass("clicked");
+
+  // Save image locally
+  html2canvas(document.querySelector("#capture")).then(canvas => {
+      canvas.toBlob(function(blob) {
+        window.saveAs(blob, 'schnitzel_contract.png');
+      });
+    });
+});

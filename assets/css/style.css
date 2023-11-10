@@ -38,6 +38,16 @@ body {
     padding-top: 50px;
 }
 
+.spacer-sm {
+    padding-top: 20px;
+}
+
+.spacer-md {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 .emphasis {
     font-family: 'Vollkorn';
     font-size: 22px;
@@ -104,9 +114,9 @@ canvas.signature-pad {
     width: 600px;
     height: 100px;
 }
+
 button.clear {
     height: 100%;
-    border: #26231f;
     background: rgba(255, 255, 255, .10);
     color: rgba(38, 35, 31, .50);
     font-family: 'Vollkorn';
@@ -114,7 +124,28 @@ button.clear {
     cursor: pointer;
     padding: 0px;
 }
+
 button.clear span {
     transform: rotate(90deg);
     display: block;
+}
+
+#certification {
+    font-size: 24px;
+    font-family: 'Vollkorn';
+    font-style: italic;
+    padding-top: 50px;
+}
+
+#certification img {
+    cursor: pointer;
+    width: 50%;
+    transform: rotate(7deg);
+    opacity: 0.2;
+}
+#certification:hover img {
+    opacity: 0.5;
+}
+#certification.clicked img {
+    opacity: 1;
 }
