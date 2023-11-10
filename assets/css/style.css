@@ -10,6 +10,11 @@ body {
     cursor: url('../images/quill_cursor.png'), pointer;
 }
 
+.medieval-caps {
+    max-width: 7%;
+    height: auto;
+}
+
 .bullet-h { 
     counter-increment: ordem;
 }
