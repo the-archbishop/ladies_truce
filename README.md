@@ -1,1 +1,1 @@
-# ladies_truce
+# schnitzel_truce
